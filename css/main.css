@@ -274,6 +274,10 @@ textarea {
   background-size: cover;
 }
 
+.navbar-item img {
+  width: 20px;
+}
+
 .lng-btn {
   color: #fff;
   height: 38px;
@@ -339,7 +343,7 @@ textarea {
   margin: -30px 10px 20px 10px;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
     0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  min-height: 195px;
+  min-height: 160px;
 }
 
 .card-ico {
@@ -395,7 +399,16 @@ textarea {
   font-size: 19px;
   color: #959595;
   text-align: center;
-  margin-top: 25px;
+  margin-top: 30px;
+}
+
+.ubam-title-exp2 {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 19px;
+  color: #959595;
+  text-align: center;
+  margin-top: 5px;
 }
 
 .exp-title {
