@@ -1,5 +1,5 @@
 $(function () {
-  console.log("Hellooooo");
+  // console.log("Hellooooo");
   var link = $("#scrollspy a.dot");
 
   // Move to specific section when click on menu link
@@ -26,7 +26,7 @@ $(function () {
     var sTop = $(window).scrollTop();
     $("section").each(function () {
       var id = $(this).attr("id"),
-        offset = $(this).offset().top - 100,
+        offset = $(this).offset().top - 220,
         height = $(this).height();
       if (sTop >= offset && sTop < offset + height) {
         link.removeClass("active");

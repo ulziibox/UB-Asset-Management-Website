@@ -274,10 +274,6 @@ textarea {
   background-size: cover;
 }
 
-.navbar-item img {
-  width: 20px;
-}
-
 .lng-btn {
   color: #fff;
   height: 38px;
@@ -315,6 +311,15 @@ textarea {
   border: 0px;
 }
 
+.navbar-item .icon {
+  height: 5px !important;
+}
+
+.header-logo {
+  height: 55px;
+  border-radius: 5px;
+}
+
 .login-btn:hover {
   background: #940000;
   color: #fff;
@@ -339,7 +344,7 @@ textarea {
 .ubam-card {
   padding: 30px;
   background: #ffffff;
-  border-radius: 6px;
+  /* border-radius: 6px; */
   margin: -30px 10px 20px 10px;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
     0 4px 6px -2px rgba(0, 0, 0, 0.05);
@@ -617,3 +622,104 @@ p {
   transform: translateX(0px);
   opacity: 1;
 }
+
+.inv-dot {
+  content: "";
+  height: 12px;
+  width: 12px;
+  background: #940000;
+  border-radius: 50%;
+}
+
+/* .inv-vis {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: gray;
+} */
+
+.form-steps {
+  display: block;
+  width: 100%;
+  position: relative;
+  margin: 40px 0;
+}
+
+.form-steps__item {
+  padding: 0;
+  position: relative;
+  display: block;
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+
+.form-steps__item-content {
+  display: inline-block;
+}
+
+.form-steps__item-icon {
+  display: block;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  line-height: 40px;
+  margin: 0 auto 10px auto;
+  position: relative;
+  z-index: 2;
+}
+
+.form-steps__item-line {
+  display: inline-block;
+  height: 1px;
+  width: 100%;
+  float: left;
+  position: absolute;
+  border-bottom: 2px dashed #940000;
+  left: -50%;
+  top: 8px;
+  z-index: 1;
+}
+
+.form-steps__item--completed .form-steps__item-icon {
+  background: #940000;
+  color: transparent;
+  border-radius: 100%;
+  outline: white solid 10px;
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 15px;
+  height: 15px;
+  line-height: 60px;
+}
+
+@media only screen and (max-width: 767px) {
+  .form-steps__item-icon,
+  .form-steps__item--completed .form-steps__item-icon {
+    width: 15px;
+    height: 15px;
+    line-height: 30px;
+  }
+
+  .form-steps__item-line {
+    top: 8px;
+  }
+}
+
+.form-steps__item-text {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.navbar-item img {
+  max-height: 200px !important;
+}
+/* 
+.form-steps-subtitle {
+  float: left;
+  margin-top: 40px;
+  margin-right: 60px;
+} */
