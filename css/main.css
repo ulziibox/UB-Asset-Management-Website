@@ -12,7 +12,7 @@
    ========================================================================== */
 
 * {
-  font-family: "Roboto Condensed", sans-serif !important;
+  font-family: "Roboto Condensed", sans-serif;
 }
 html {
   color: #222;
@@ -270,7 +270,7 @@ textarea {
 
 .ubam-header {
   background: linear-gradient(rgba(80, 21, 21, 0.5), rgba(80, 21, 21, 0.5)),
-    url("../img/city-bg.png");
+    url("../img/park-place.jpg");
   background-size: cover;
 }
 
