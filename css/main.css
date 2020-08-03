@@ -270,8 +270,9 @@ textarea {
 
 .ubam-header {
   background: linear-gradient(rgba(80, 21, 21, 0.5), rgba(80, 21, 21, 0.5)),
-    url("../img/park-place.jpg");
+    url("../img/ubam-bg-ub-city.jpg");
   background-size: cover;
+  background-position: 1px;
 }
 
 .lng-btn {
