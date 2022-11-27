@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP_HOST} ^ubam\.mn$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.ubam\.mn$
+RewriteRule .* https://www.ubam.mn%{REQUEST_URI} [R=301,L]
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
